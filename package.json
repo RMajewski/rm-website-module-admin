@@ -2,12 +2,19 @@
   "name": "@rene-majewski/website-module-admin",
   "version": "1.0.0",
   "packageManager": "pnpm@9.12.1",
+  "engines": {
+    "node": ">=20.11.0"
+  },
   "type": "module",
   "main": "src/module.ts",
   "exports": {
     ".": "./src/module.ts"
   },
-  "dependencies": {
-    "@supabase/supabase-js": "2.0.0"
+  "files": [
+    "src",
+    "src/runtime"
+  ],
+  "devDependencies": {
+    "@nuxt/kit": "^3.16.1"
   }
 }
